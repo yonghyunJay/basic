@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class LoginController {
-	@GetMapping("/login")
+public class LoginTestController {
+	@GetMapping("/loginTest")
 	public String login() {
-		return "login";
+		return "loginTest";
 	}
 	
-	@PostMapping("/login")
+	@PostMapping("/loginTest")
 	@ResponseBody
 	public String loginPost(
 		@RequestParam("id") String id,
